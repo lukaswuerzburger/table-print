@@ -1,33 +1,58 @@
 use_frameworks!
-
 workspace 'table-log'
 
-target 'table-log-macos' do
+# Helper
+
+def iOS_platform
+    platform :ios, '9.0'
+end
+
+def macOS_platform
     platform :osx, '10.10'
+end
+
+def framework_project
     project 'table-log/table-log.xcodeproj'
+end
+
+def demo_project
+    project 'table-log-demo/table-log-demo.xcodeproj'
+end
+
+def shared_pods
     pod 'SwiftLint'
 end
+
+# Targets iOS
 
 target 'table-log-ios' do
-    platform :ios, '9.0'
-    project 'table-log/table-log.xcodeproj'
-    pod 'SwiftLint'
-end
-
-target 'table-log-macos-lib' do
-    platform :ios, '9.0'
-    project 'table-log/table-log.xcodeproj'
-    pod 'SwiftLint'
-end
-
-target 'table-log-demo-macos' do
-	platform :osx, '10.10'
-	project 'table-log-demo/table-log-demo.xcodeproj'
-	pod 'SwiftLint'
+    iOS_platform
+    framework_project
+    shared_pods
 end
 
 target 'table-log-demo-ios' do
-	platform :ios, '9.0'
-	project 'table-log-demo/table-log-demo.xcodeproj'
-	pod 'SwiftLint'
+    iOS_platform
+    demo_project
+    shared_pods
+end
+
+# Targets macOS
+
+target 'table-log-macos' do
+    macOS_platform
+    framework_project
+    shared_pods
+end
+
+target 'table-log-demo-macos' do
+    macOS_platform
+    demo_project
+    shared_pods
+end
+
+target 'table-log-demo-macos-cli' do
+    macOS_platform
+    demo_project
+    shared_pods
 end

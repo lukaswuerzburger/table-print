@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21F395572146ABCB00451A50"
-               BuildableName = "table-log-demo-macos"
-               BlueprintName = "table-log-demo-macos"
+               BuildableName = "table-log-demo-macos-cli"
+               BlueprintName = "table-log-demo-macos-cli"
                ReferencedContainer = "container:table-log-demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21F395782146ACC200451A50"
-               BuildableName = "table_log_ios.framework"
+               BuildableName = "table_log.framework"
                BlueprintName = "table-log-ios"
                ReferencedContainer = "container:../table-log/table-log.xcodeproj">
             </BuildableReference>
@@ -47,8 +47,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F395572146ABCB00451A50"
-            BuildableName = "table-log-demo-macos"
-            BlueprintName = "table-log-demo-macos"
+            BuildableName = "table-log-demo-macos-cli"
+            BlueprintName = "table-log-demo-macos-cli"
             ReferencedContainer = "container:table-log-demo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -70,8 +70,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F395572146ABCB00451A50"
-            BuildableName = "table-log-demo-macos"
-            BlueprintName = "table-log-demo-macos"
+            BuildableName = "table-log-demo-macos-cli"
+            BlueprintName = "table-log-demo-macos-cli"
             ReferencedContainer = "container:table-log-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -89,8 +89,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F395572146ABCB00451A50"
-            BuildableName = "table-log-demo-macos"
-            BlueprintName = "table-log-demo-macos"
+            BuildableName = "table-log-demo-macos-cli"
+            BlueprintName = "table-log-demo-macos-cli"
             ReferencedContainer = "container:table-log-demo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

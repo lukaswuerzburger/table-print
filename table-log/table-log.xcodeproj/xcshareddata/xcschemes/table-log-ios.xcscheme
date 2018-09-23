@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21F395782146ACC200451A50"
-               BuildableName = "table_log_ios.framework"
+               BuildableName = "table_log.framework"
                BlueprintName = "table-log-ios"
                ReferencedContainer = "container:table-log.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F395782146ACC200451A50"
-            BuildableName = "table_log_ios.framework"
+            BuildableName = "table_log.framework"
             BlueprintName = "table-log-ios"
             ReferencedContainer = "container:table-log.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21F395782146ACC200451A50"
-            BuildableName = "table_log_ios.framework"
+            BuildableName = "table_log.framework"
             BlueprintName = "table-log-ios"
             ReferencedContainer = "container:table-log.xcodeproj">
          </BuildableReference>
