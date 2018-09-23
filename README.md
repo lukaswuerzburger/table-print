@@ -7,11 +7,10 @@ A logging tool that prints in a nice table format to easily find it especially i
 let stuff = [
     "String" : "Hello World",
     "nil string" : nil,
-    "date": Date().description
+    "date": Date()
 ]
 
-let logger = KeyValueLogger()
-logger.log(stuff)
+Log(stuff)
 ```
 
 
@@ -26,7 +25,3 @@ The above code would produce this output:
 | String     | Hello World               |
 +------------+---------------------------+
 ```
-
-##  `TableLogger` Example (TBD)
-
-The `TableLogger` supports multiple columns.
