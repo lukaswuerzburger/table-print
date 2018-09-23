@@ -1,5 +1,5 @@
 # TableLog
-A logging tool that prints in a nice table format to easily find it especially in big logs.
+A universal logging tool that prints in a nice table format to easily find it in the console – especially in big logs.
 
 ##  `KeyValueLogger` Example
 

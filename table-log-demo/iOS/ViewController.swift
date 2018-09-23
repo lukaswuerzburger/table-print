@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import table_log_ios
+import table_log
 
 class ViewController: UIViewController {
 
