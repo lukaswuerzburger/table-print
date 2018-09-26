@@ -1,7 +1,14 @@
 # TablePrint
 TablePrint is a tool designed for developers. It prints tables of dictionaries in the debugger console.
 
-### Description
+### Contents
+
+- ✍️ Description
+- 🖥 Examples
+- 👩‍💻👨‍💻 How to use
+- ⚠️ Requierments
+
+### ✍️ Description
 
 TablePrint simply comes with only one function that takes a dictionary:
 
@@ -9,12 +16,11 @@ TablePrint simply comes with only one function that takes a dictionary:
 func printTable(_ content: [AnyHashable : Any?])
 ```
 
-### Example
+### 🖥 Examples
+
+##### 📕 Book Details
 
 You can throw in a dictionary with anything in it.
-
-
-##### Print Book Details
 
 ```swift
 let book: [AnyHashable : Any?] = [
@@ -39,8 +45,7 @@ Result
 +--------------+---------------------------------+
 ```
 
-##### Print String Attributes
-
+##### 🔗 String Attributes
 
 ```swift
 let stringAttributes: [NSAttributedStringKey : Any?] = [
@@ -62,3 +67,17 @@ Result
 | NSKern  | 1                                |
 +---------+----------------------------------+
 ```
+
+### 👩‍💻👨‍💻 How to use
+
+TablePrint is not yet ready, however planned to be available over Cocoapods.
+
+### ⚠️ Requierments
+
+- iOS 9+
+- macOS 10.10+
+- Xcode 9+
+
+### 💪 Contribute
+
+Issues and pull requests are welcome.
