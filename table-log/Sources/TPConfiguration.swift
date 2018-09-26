@@ -1,5 +1,5 @@
 //
-//  PrinttyConfiguration.swift
+//  PTConfiguration.swift
 //  table-log
 //
 //  Created by Lukas Würzburger on 9/11/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct PrinttyConfiguration {
+public struct TPConfiguration {
     var padding = 1
     var keyTitle = "Key"
     var valueTitle = "Value"
@@ -17,5 +17,5 @@ public struct PrinttyConfiguration {
     var verticalLineSymbol = "|"
     var placeholder = "<nil>"
 
-    public static var shared = PrinttyConfiguration()
+    public static var shared = TPConfiguration()
 }

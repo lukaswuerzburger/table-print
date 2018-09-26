@@ -13,15 +13,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        printSomeValues()
+        printStringAttributes()
+        printBookDetails()
     }
 
-    func printSomeValues() {
-        let stuff: [String : Any?] = [
-            "null value": nil,
-            "string": "Yet another text",
-            "color": UIColor.black
+    func printStringAttributes() {
+
+        let stringAttributes: [NSAttributedStringKey : Any?] = [
+            .foregroundColor : UIColor.red,
+            .kern : 1,
+            .link: URL(string: "https://apple.com/"),
         ]
-        Log(stuff)
+        printTable(stringAttributes)
+    }
+
+    func printBookDetails() {
+        let book: [AnyHashable : Any?] = [
+            "title": "The iPhone Developer's Cookbook",
+            "author": "Erica Sadun",
+            "publish_date": Date(timeIntervalSince1970: 1261094400),
+            "price": 16.65
+        ]
+        printTable(book)
     }
 }

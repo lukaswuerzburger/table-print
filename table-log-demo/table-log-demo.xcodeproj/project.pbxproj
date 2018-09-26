@@ -13,16 +13,17 @@
 		2156D58E2157AFFF00978BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2156D58D2157AFFF00978BED /* Assets.xcassets */; };
 		2156D5912157AFFF00978BED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2156D58F2157AFFF00978BED /* LaunchScreen.storyboard */; };
 		2156D59B2157B11A00978BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156D5782157AF9800978BED /* ViewController.swift */; };
-		2156D5B62157C1AB00978BED /* Pods_table_log_macos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2156D5B52157C1AB00978BED /* Pods_table_log_macos.framework */; };
 		2156D5C42157DFBE00978BED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156D5C32157DFBE00978BED /* AppDelegate.swift */; };
 		2156D5C62157DFBE00978BED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2156D5C52157DFBE00978BED /* ViewController.swift */; };
 		2156D5C82157DFBF00978BED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2156D5C72157DFBF00978BED /* Assets.xcassets */; };
 		2156D5CB2157DFBF00978BED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2156D5C92157DFBF00978BED /* Main.storyboard */; };
-		2156D5DA2157E2C500978BED /* table_log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2156D5D92157E2C500978BED /* table_log.framework */; };
-		2156D5DB2157E2C500978BED /* table_log.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2156D5D92157E2C500978BED /* table_log.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		219B2704215C0B690037C381 /* table_log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219B2703215C0B690037C381 /* table_log.framework */; };
+		219B2706215C0B770037C381 /* table_log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219B2705215C0B770037C381 /* table_log.framework */; };
+		219B2707215C0B770037C381 /* table_log.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 219B2705215C0B770037C381 /* table_log.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		219B2708215C0B7D0037C381 /* table_log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219B2705215C0B770037C381 /* table_log.framework */; };
+		219B2709215C0B7D0037C381 /* table_log.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 219B2705215C0B770037C381 /* table_log.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		21F3955C2146ABCB00451A50 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F3955B2146ABCB00451A50 /* main.swift */; };
 		7DCD3E8AC6CC0A9AF65B8F48 /* Pods_table_log_demo_macos_cli.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C888899CB1548A467D5D11 /* Pods_table_log_demo_macos_cli.framework */; };
-		B3A4167701B6BFDFC69032D6 /* Pods_table_log_demo_macos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A712484E81E4F14C9DFBA0D /* Pods_table_log_demo_macos.framework */; };
 		FE278DA57EFA28B1FF228B94 /* Pods_table_log_demo_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B7DCBBF59B3FE96C4A0F95 /* Pods_table_log_demo_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				219B2709215C0B7D0037C381 /* table_log.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2156D5DB2157E2C500978BED /* table_log.framework in Embed Frameworks */,
+				219B2707215C0B770037C381 /* table_log.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +64,6 @@
 /* Begin PBXFileReference section */
 		1A712484E81E4F14C9DFBA0D /* Pods_table_log_demo_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_table_log_demo_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBCBF5B00AE151F2CADD1B8 /* Pods-table-log-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-log-demo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-table-log-demo/Pods-table-log-demo.debug.xcconfig"; sourceTree = "<group>"; };
-		21560E30214800AE00B675CE /* table_log_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = table_log_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2156D5782157AF9800978BED /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2156D5842157AFFE00978BED /* table-log-demo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "table-log-demo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2156D5862157AFFE00978BED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,8 +71,6 @@
 		2156D58D2157AFFF00978BED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2156D5902157AFFF00978BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2156D5922157AFFF00978BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2156D59C2157B44A00978BED /* table_log_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = table_log_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2156D5B32157B7E500978BED /* libtable-log-macos-lib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = "libtable-log-macos-lib.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2156D5B52157C1AB00978BED /* Pods_table_log_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_table_log_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2156D5B92157C7FF00978BED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2156D5C12157DFBE00978BED /* table-log-demo-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "table-log-demo-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +80,8 @@
 		2156D5CA2157DFBF00978BED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2156D5CC2157DFBF00978BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2156D5CD2157DFBF00978BED /* table_log_demo_macos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = table_log_demo_macos.entitlements; sourceTree = "<group>"; };
-		2156D5D92157E2C500978BED /* table_log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = table_log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		219B2703215C0B690037C381 /* table_log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = table_log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		219B2705215C0B770037C381 /* table_log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = table_log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F395582146ABCB00451A50 /* table-log-demo-macos-cli */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "table-log-demo-macos-cli"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F3955B2146ABCB00451A50 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3B5B4B16B803916F77E94795 /* Pods-table-log-demo-macos-cli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-log-demo-macos-cli.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-table-log-demo-macos-cli/Pods-table-log-demo-macos-cli.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2156D5DA2157E2C500978BED /* table_log.framework in Frameworks */,
+				219B2706215C0B770037C381 /* table_log.framework in Frameworks */,
 				FE278DA57EFA28B1FF228B94 /* Pods_table_log_demo_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219B2708215C0B7D0037C381 /* table_log.framework in Frameworks */,
 				1781A7666921F2DD1C879D42 /* Pods_table_log_demo_macos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,8 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2156D5B62157C1AB00978BED /* Pods_table_log_macos.framework in Frameworks */,
-				B3A4167701B6BFDFC69032D6 /* Pods_table_log_demo_macos.framework in Frameworks */,
+				219B2704215C0B690037C381 /* table_log.framework in Frameworks */,
 				7DCD3E8AC6CC0A9AF65B8F48 /* Pods_table_log_demo_macos_cli.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,8 +155,7 @@
 		21F3954F2146ABCB00451A50 = {
 			isa = PBXGroup;
 			children = (
-				2156D5D92157E2C500978BED /* table_log.framework */,
-				2156D59C2157B44A00978BED /* table_log_ios.framework */,
+				219B2705215C0B770037C381 /* table_log.framework */,
 				2156D5702157AF1600978BED /* iOS */,
 				2156D5C22157DFBE00978BED /* macOS */,
 				21F3955A2146ABCB00451A50 /* macOS CLI */,
@@ -187,10 +186,9 @@
 		8BB0108083F9872A29836787 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				219B2703215C0B690037C381 /* table_log.framework */,
 				2156D5B92157C7FF00978BED /* AppKit.framework */,
 				2156D5B52157C1AB00978BED /* Pods_table_log_macos.framework */,
-				2156D5B32157B7E500978BED /* libtable-log-macos-lib.dylib */,
-				21560E30214800AE00B675CE /* table_log_macos.framework */,
 				1A712484E81E4F14C9DFBA0D /* Pods_table_log_demo_macos.framework */,
 				A3B7DCBBF59B3FE96C4A0F95 /* Pods_table_log_demo_ios.framework */,
 				59C888899CB1548A467D5D11 /* Pods_table_log_demo_macos_cli.framework */,

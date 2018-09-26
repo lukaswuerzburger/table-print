@@ -7,26 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21560E202147F20B00B675CE /* PrinttyConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21560E1F2147F20B00B675CE /* PrinttyConfiguration.swift */; };
-		2156D5A02157B52900978BED /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395852146AD9B00451A50 /* Printer.swift */; };
-		2156D5A12157B52900978BED /* PrinttyConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21560E1F2147F20B00B675CE /* PrinttyConfiguration.swift */; };
-		2156D5A22157B52900978BED /* TLLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395862146AD9B00451A50 /* TLLog.swift */; };
+		21560E202147F20B00B675CE /* TPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21560E1F2147F20B00B675CE /* TPConfiguration.swift */; };
+		2156D5A02157B52900978BED /* TPPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395852146AD9B00451A50 /* TPPrinter.swift */; };
+		2156D5A12157B52900978BED /* TPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21560E1F2147F20B00B675CE /* TPConfiguration.swift */; };
+		2156D5A22157B52900978BED /* TPTablePrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395862146AD9B00451A50 /* TPTablePrint.swift */; };
+		219B2700215C0A7C0037C381 /* printTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B26FF215C0A7C0037C381 /* printTable.swift */; };
+		219B270A215C0E5E0037C381 /* printTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B26FF215C0A7C0037C381 /* printTable.swift */; };
+		219B270C215C19AF0037C381 /* TPConsolePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B270B215C19AF0037C381 /* TPConsolePrinter.swift */; };
+		219B270D215C19AF0037C381 /* TPConsolePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B270B215C19AF0037C381 /* TPConsolePrinter.swift */; };
 		21F3957E2146ACC200451A50 /* table_log.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F3957C2146ACC200451A50 /* table_log.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21F395872146AD9B00451A50 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395852146AD9B00451A50 /* Printer.swift */; };
-		21F395882146AD9B00451A50 /* TLLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395862146AD9B00451A50 /* TLLog.swift */; };
+		21F395872146AD9B00451A50 /* TPPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395852146AD9B00451A50 /* TPPrinter.swift */; };
+		21F395882146AD9B00451A50 /* TPTablePrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395862146AD9B00451A50 /* TPTablePrint.swift */; };
 		2BA50C394DDC554B6A8E7CFD /* Pods_table_log_macos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2132DBCA2F1A15222839DA65 /* Pods_table_log_macos.framework */; };
 		8960FC3DDDB995CA15D79C1E /* Pods_table_log_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC73538473A7FA88F22ED7EE /* Pods_table_log_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2132DBCA2F1A15222839DA65 /* Pods_table_log_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_table_log_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21560E1F2147F20B00B675CE /* PrinttyConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinttyConfiguration.swift; sourceTree = "<group>"; };
+		21560E1F2147F20B00B675CE /* TPConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPConfiguration.swift; sourceTree = "<group>"; };
 		21560E282148009200B675CE /* table_log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = table_log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21560E2B2148009200B675CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219B26FF215C0A7C0037C381 /* printTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printTable.swift; sourceTree = "<group>"; };
+		219B270B215C19AF0037C381 /* TPConsolePrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPConsolePrinter.swift; sourceTree = "<group>"; };
 		21F395792146ACC200451A50 /* table_log.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = table_log.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F3957C2146ACC200451A50 /* table_log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table_log.h; sourceTree = "<group>"; };
-		21F395852146AD9B00451A50 /* Printer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
-		21F395862146AD9B00451A50 /* TLLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TLLog.swift; sourceTree = "<group>"; };
+		21F395852146AD9B00451A50 /* TPPrinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPPrinter.swift; sourceTree = "<group>"; };
+		21F395862146AD9B00451A50 /* TPTablePrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPTablePrint.swift; sourceTree = "<group>"; };
 		4F5186439EE2E9F175A1FCF9 /* Pods-table-log-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-log-ios.release.xcconfig"; path = "../Pods/Target Support Files/Pods-table-log-ios/Pods-table-log-ios.release.xcconfig"; sourceTree = "<group>"; };
 		8386A5A4A01F8A3CC4AD258F /* Pods-table-log-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-log-ios.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-table-log-ios/Pods-table-log-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		AD97FD1DDA53D3526B6785E3 /* Pods-table-log-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-log-macos.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-table-log-macos/Pods-table-log-macos.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,9 +92,11 @@
 		21F3957B2146ACC200451A50 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				21F395852146AD9B00451A50 /* Printer.swift */,
-				21560E1F2147F20B00B675CE /* PrinttyConfiguration.swift */,
-				21F395862146AD9B00451A50 /* TLLog.swift */,
+				219B26FF215C0A7C0037C381 /* printTable.swift */,
+				21F395862146AD9B00451A50 /* TPTablePrint.swift */,
+				21560E1F2147F20B00B675CE /* TPConfiguration.swift */,
+				21F395852146AD9B00451A50 /* TPPrinter.swift */,
+				219B270B215C19AF0037C381 /* TPConsolePrinter.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -269,9 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2156D5A02157B52900978BED /* Printer.swift in Sources */,
-				2156D5A12157B52900978BED /* PrinttyConfiguration.swift in Sources */,
-				2156D5A22157B52900978BED /* TLLog.swift in Sources */,
+				219B270A215C0E5E0037C381 /* printTable.swift in Sources */,
+				2156D5A02157B52900978BED /* TPPrinter.swift in Sources */,
+				2156D5A12157B52900978BED /* TPConfiguration.swift in Sources */,
+				219B270D215C19AF0037C381 /* TPConsolePrinter.swift in Sources */,
+				2156D5A22157B52900978BED /* TPTablePrint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21560E202147F20B00B675CE /* PrinttyConfiguration.swift in Sources */,
-				21F395882146AD9B00451A50 /* TLLog.swift in Sources */,
-				21F395872146AD9B00451A50 /* Printer.swift in Sources */,
+				219B2700215C0A7C0037C381 /* printTable.swift in Sources */,
+				21560E202147F20B00B675CE /* TPConfiguration.swift in Sources */,
+				21F395882146AD9B00451A50 /* TPTablePrint.swift in Sources */,
+				219B270C215C19AF0037C381 /* TPConsolePrinter.swift in Sources */,
+				21F395872146AD9B00451A50 /* TPPrinter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  Printer.swift
+//  TPPrinter.swift
 //  table-log
 //
 //  Created by Lukas Würzburger on 8/19/18.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol Printer {
-    func print(_ str: String) -> Void
+public protocol TPPrinter {
+    func printString(_ str: String) -> Void
 }
