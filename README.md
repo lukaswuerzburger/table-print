@@ -1,27 +1,64 @@
-# TableLog
-A universal logging tool that prints in a nice table format to easily find it in the console – especially in big logs.
+# TablePrint
+TablePrint is a tool designed for developers. It prints tables of dictionaries in the debugger console.
 
-##  `KeyValueLogger` Example
+### Description
+
+TablePrint simply comes with only one function that takes a dictionary:
 
 ```swift
-let stuff = [
-    "String" : "Hello World",
-    "nil string" : nil,
-    "date": Date()
+func printTable(_ content: [AnyHashable : Any?])
+```
+
+### Example
+
+You can throw in a dictionary with anything in it.
+
+
+##### Print Book Details
+
+```swift
+let book: [AnyHashable : Any?] = [
+    "title": "The iPhone Developer's Cookbook",
+    "author": "Erica Sadun",
+    "publish_date": Date(timeIntervalSince1970: 1261094400),
+    "price": 16.65
 ]
-
-Log(stuff)
+printTable(book)
 ```
 
-
-The above code would produce this output:
+Result
 
 ```
-+------------+---------------------------+
-| Key        | Value                     |
-+------------+---------------------------+
-| nil string | <nil>                     |
-| date       | 2018-06-15 12:22:43 +0000 |
-| String     | Hello World               |
-+------------+---------------------------+
++--------------+---------------------------------+
+| Key          | Value                           |
++--------------+---------------------------------+
+| publish_date | 2009-12-18 00:00:00 +0000       |
+| author       | Erica Sadun                     |
+| title        | The iPhone Developer's Cookbook |
+| price        | 16.65                           |
++--------------+---------------------------------+
+```
+
+##### Print String Attributes
+
+
+```swift
+let stringAttributes: [NSAttributedStringKey : Any?] = [
+    .foregroundColor : UIColor.red,
+    .kern : 1,
+    .link: URL(string: "https://apple.com/"),
+]
+printTable(stringAttributes)
+```
+
+Result
+
+```
++---------+----------------------------------+
+| Key     | Value                            |
++---------+----------------------------------+
+| NSLink  | https://apple.com/               |
+| NSColor | UIExtendedSRGBColorSpace 1 0 0 1 |
+| NSKern  | 1                                |
++---------+----------------------------------+
 ```
