@@ -3,10 +3,11 @@ TablePrint is a tool designed for developers. It prints tables of dictionaries i
 
 ### Contents
 
-- ✍️ Description
-- 🖥 Examples
-- 👩‍💻👨‍💻 How to use
-- ⚠️ Requierments
+- ✍️ [Description](#️-description)
+- 🖥 [Examples](#-examples)
+- 💻 [How to use](#-how-to-use)
+- ⚠️ [Requirements](#-requirements)
+- 🐞 [Known Issues](#-known-issues)
 
 ### ✍️ Description
 
@@ -18,7 +19,7 @@ func printTable(_ content: [AnyHashable : Any?])
 
 ### 🖥 Examples
 
-##### 📕 Book Details
+##### Book Details
 
 You can throw in a dictionary with anything in it.
 
@@ -45,7 +46,7 @@ Result
 +--------------+---------------------------------+
 ```
 
-##### 🔗 String Attributes
+##### String Attributes
 
 ```swift
 let stringAttributes: [NSAttributedStringKey : Any?] = [
@@ -68,15 +69,20 @@ Result
 +---------+----------------------------------+
 ```
 
-### 👩‍💻👨‍💻 How to use
+### 💻 How to use
 
 TablePrint is not yet ready, however planned to be available over Cocoapods.
 
-### ⚠️ Requierments
+### ⚠️ Requirements
 
 - iOS 9+
 - macOS 10.10+
 - Xcode 9+
+
+### 🐞 Known Issues
+
+- [#2](https://github.com/lukaswuerzburger/table-log/issues/2) The column width is currently not limited. Long lines result in ugly line breaks that break the whole UI of the table.
+- [#1](https://github.com/lukaswuerzburger/table-log/issues/1) Can't run on macOS command line tool.
 
 ### 💪 Contribute
 
