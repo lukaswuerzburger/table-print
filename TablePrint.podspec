@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
     s.homepage = "https://github.com/lukaswuerzburger/table-print"
     s.platform = :ios
     s.source = { :git => "https://github.com/lukaswuerzburger/table-print.git", :tag => "1.0.0" }
-    s.source_files = "Pod/**/*.swift"
+    s.source_files = "table-print/Sources/*.swift"
     s.ios.deployment_target = "9.0"
     s.ios.frameworks = 'Foundation'
     s.osx.deployment_target = "10.10"
