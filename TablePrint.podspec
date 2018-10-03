@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.source_files = "table-print/Sources/*.swift"
     s.ios.deployment_target = "9.0"
     s.ios.frameworks = 'Foundation'
-    s.osx.deployment_target = "10.10"
-    s.osx.frameworks = 'Foundation'
+#    s.osx.deployment_target = "10.10"
+#    s.osx.frameworks = 'Foundation'
     s.requires_arc = true
 end
