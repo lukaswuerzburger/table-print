@@ -3,10 +3,10 @@ TablePrint is a tool designed for developers. It prints tables of dictionaries i
 
 ### Contents
 
-- ✍️ [Description](#-description)
+- ✍️ [Description](#️-description)
 - 🖥 [Examples](#-examples)
 - 💻 [How to use](#-how-to-use)
-- ⚠️ [Requirements](#-requirements)
+- ⚠️ [Requirements](#️-requirements)
 - 🐞 [Known Issues](#-known-issues)
 
 ### ✍️ Description
