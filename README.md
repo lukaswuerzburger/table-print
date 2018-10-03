@@ -69,7 +69,7 @@ printTable(stringAttributes)
 
 TablePrint is available on Cocoapods. Just put following line in your `Podfile`:
 ```ruby
-    pod 'TablePrint'
+pod 'TablePrint'
 ```
 
 ### ⚠️ Requirements
