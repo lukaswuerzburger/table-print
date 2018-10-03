@@ -1,5 +1,5 @@
 use_frameworks!
-workspace 'table-log'
+workspace 'table-print'
 
 # Helper
 
@@ -12,11 +12,11 @@ def macOS_platform
 end
 
 def framework_project
-    project 'table-log/table-log.xcodeproj'
+    project 'table-print/table-print.xcodeproj'
 end
 
 def demo_project
-    project 'table-log-demo/table-log-demo.xcodeproj'
+    project 'table-print-demo/table-print-demo.xcodeproj'
 end
 
 def shared_pods
@@ -25,13 +25,13 @@ end
 
 # Targets iOS
 
-target 'table-log-ios' do
+target 'table-print-ios' do
     iOS_platform
     framework_project
     shared_pods
 end
 
-target 'table-log-demo-ios' do
+target 'table-print-demo-ios' do
     iOS_platform
     demo_project
     shared_pods
@@ -39,19 +39,19 @@ end
 
 # Targets macOS
 
-target 'table-log-macos' do
+target 'table-print-macos' do
     macOS_platform
     framework_project
     shared_pods
 end
 
-target 'table-log-demo-macos' do
+target 'table-print-demo-macos' do
     macOS_platform
     demo_project
     shared_pods
 end
 
-target 'table-log-demo-macos-cli' do
+target 'table-print-demo-macos-cli' do
     macOS_platform
     demo_project
     shared_pods
