@@ -3,7 +3,7 @@ TablePrint is a tool designed for developers. It prints tables of dictionaries i
 
 ### Contents
 
-- ✍️ [Description](#️-description)
+- ✍️ [Description](#-description)
 - 🖥 [Examples](#-examples)
 - 💻 [How to use](#-how-to-use)
 - ⚠️ [Requirements](#-requirements)
@@ -19,7 +19,7 @@ func printTable(_ content: [AnyHashable : Any?])
 
 ### 🖥 Examples
 
-##### Book Details
+#### 1. Book Details
 
 You can throw in a dictionary with anything in it.
 
@@ -33,8 +33,6 @@ let book: [AnyHashable : Any?] = [
 printTable(book)
 ```
 
-Result
-
 ```
 +--------------+---------------------------------+
 | Key          | Value                           |
@@ -46,7 +44,7 @@ Result
 +--------------+---------------------------------+
 ```
 
-##### String Attributes
+#### 2. String Attributes
 
 ```swift
 let stringAttributes: [NSAttributedStringKey : Any?] = [
@@ -56,8 +54,6 @@ let stringAttributes: [NSAttributedStringKey : Any?] = [
 ]
 printTable(stringAttributes)
 ```
-
-Result
 
 ```
 +---------+----------------------------------+
@@ -71,7 +67,10 @@ Result
 
 ### 💻 How to use
 
-TablePrint is not yet ready, however planned to be available over Cocoapods.
+TablePrint is available on Cocoapods. Just put following line in your `Podfile`:
+```ruby
+    pod 'TablePrint'
+```
 
 ### ⚠️ Requirements
 
@@ -81,8 +80,8 @@ TablePrint is not yet ready, however planned to be available over Cocoapods.
 
 ### 🐞 Known Issues
 
-- [#2](https://github.com/lukaswuerzburger/table-log/issues/2) The column width is currently not limited. Long lines result in ugly line breaks that break the whole UI of the table.
-- [#1](https://github.com/lukaswuerzburger/table-log/issues/1) Can't run on macOS command line tool.
+- [#2](https://github.com/lukaswuerzburger/table-print/issues/2) The column width is currently not limited. Long lines result in ugly line breaks that break the whole UI of the table.
+- [#1](https://github.com/lukaswuerzburger/table-print/issues/1) Can't run on macOS command line tool.
 
 ### 💪 Contribute
 
