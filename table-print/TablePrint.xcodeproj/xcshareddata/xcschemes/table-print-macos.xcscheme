@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21560E272148009200B675CE"
-               BuildableName = "table_print.framework"
+               BuildableName = "TablePrint.framework"
                BlueprintName = "table-print-macos"
                ReferencedContainer = "container:TablePrint.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21560E272148009200B675CE"
-            BuildableName = "table_print.framework"
+            BuildableName = "TablePrint.framework"
             BlueprintName = "table-print-macos"
             ReferencedContainer = "container:TablePrint.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21560E272148009200B675CE"
-            BuildableName = "table_print.framework"
+            BuildableName = "TablePrint.framework"
             BlueprintName = "table-print-macos"
             ReferencedContainer = "container:TablePrint.xcodeproj">
          </BuildableReference>
