@@ -74,6 +74,7 @@ pod 'TablePrint'
 
 ### ⚠️ Requirements
 
+- Swift 4+
 - iOS 9+
 - macOS 10.10+
 - Xcode 9+
