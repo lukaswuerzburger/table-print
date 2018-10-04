@@ -1,5 +1,10 @@
-# TablePrint
-TablePrint is a tool designed for developers. It prints tables of dictionaries in the debugger console.
+<p align="center">
+    <h1>TablePrint</h1>
+    <img src="https://github.com/lukaswuerzburger/table-print/raw/develop/readme-resources/logo.png" alt="Table Print" title="Table Print"/><br/>
+    <br/>
+    *TablePrint is a tool designed for developers.*  
+    *It prints tables of dictionaries in the debugger console.*
+</p>
 
 ### Contents
 
