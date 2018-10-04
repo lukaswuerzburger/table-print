@@ -1,9 +1,9 @@
 <p align="center">
     <h1>TablePrint</h1>
-    <img src="https://github.com/lukaswuerzburger/table-print/raw/develop/readme-resources/logo.png" alt="Table Print" title="Table Print"/><br/>
+    <img src="https://raw.githubusercontent.com/lukaswuerzburger/table-print/develop/readme-images/xcode-debugger.png" alt="Table Print" title="Table Print"/><br/>
     <br/>
-    *TablePrint is a tool designed for developers.*  
-    *It prints tables of dictionaries in the debugger console.*
+    TablePrint is a tool designed for developers.<br/>
+    It prints tables of dictionaries in the debugger console.
 </p>
 
 ### Contents
