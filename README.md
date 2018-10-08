@@ -2,10 +2,10 @@
     <h1>TablePrint</h1>
     <img src="https://raw.githubusercontent.com/lukaswuerzburger/table-print/develop/readme-images/xcode-debugger.png" alt="Table Print" title="Table Print" width="450"/>
     TablePrint is a tool designed for developers.<br/>
-    It prints tables of dictionaries in the debugger console.<br/>
-    <br/>
-    [Join us on Slack](https://join.slack.com/t/table-print/shared_invite/enQtNDUxMjA1ODQ2MDY3LTBmNDlhZDgxZGY1ZDU3MDk5MGRhMDAwZjYxYTZhNzUwMmIyNmI1MzY3ZDdkYWZlNjk5YTUzMGRkOTBhZTAxMGQ)
+    It prints tables of dictionaries in the debugger console.
 </p>
+
+[Join us on Slack](https://join.slack.com/t/table-print/shared_invite/enQtNDUxMjA1ODQ2MDY3LTBmNDlhZDgxZGY1ZDU3MDk5MGRhMDAwZjYxYTZhNzUwMmIyNmI1MzY3ZDdkYWZlNjk5YTUzMGRkOTBhZTAxMGQ)
 
 ### Contents
 
