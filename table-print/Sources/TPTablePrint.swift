@@ -85,7 +85,18 @@ open class TPTablePrint {
         let valueString = pair.value
         let numberOfExtraValueSpace = (widths.value - valueString.count)
         let extraValueSpaces = repeatChar(" ", count: numberOfExtraValueSpace)
-        let line = "\(configuration.verticalLineSymbol) \(pair.key)\(extraKeySpaces) \(configuration.verticalLineSymbol) \(valueString)\(extraValueSpaces) \(configuration.verticalLineSymbol)"
+        let paddingSpace = repeatChar(" ", count: configuration.padding)
+        let line = configuration.verticalLineSymbol
+            + paddingSpace
+            + pair.key
+            + extraKeySpaces
+            + paddingSpace
+            + configuration.verticalLineSymbol
+            + paddingSpace
+            + valueString
+            + extraValueSpaces
+            + paddingSpace
+            + configuration.verticalLineSymbol
         return line
     }
 
