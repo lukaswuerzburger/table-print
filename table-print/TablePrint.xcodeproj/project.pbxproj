@@ -15,7 +15,7 @@
 		219B270A215C0E5E0037C381 /* printTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B26FF215C0A7C0037C381 /* printTable.swift */; };
 		219B270C215C19AF0037C381 /* TPConsolePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B270B215C19AF0037C381 /* TPConsolePrinter.swift */; };
 		219B270D215C19AF0037C381 /* TPConsolePrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B270B215C19AF0037C381 /* TPConsolePrinter.swift */; };
-		21F3957E2146ACC200451A50 /* table_log.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F3957C2146ACC200451A50 /* table_log.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21F3957E2146ACC200451A50 /* table_print.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F3957C2146ACC200451A50 /* table_print.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21F395872146AD9B00451A50 /* TPPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395852146AD9B00451A50 /* TPPrinter.swift */; };
 		21F395882146AD9B00451A50 /* TPTablePrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F395862146AD9B00451A50 /* TPTablePrint.swift */; };
 		30D789C76DBE550B66BCE0B3 /* Pods_table_print_macos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B99F7DE4FC5236B5AA6C00D /* Pods_table_print_macos.framework */; };
@@ -31,7 +31,7 @@
 		219B26FF215C0A7C0037C381 /* printTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printTable.swift; sourceTree = "<group>"; };
 		219B270B215C19AF0037C381 /* TPConsolePrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPConsolePrinter.swift; sourceTree = "<group>"; };
 		21F395792146ACC200451A50 /* TablePrint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TablePrint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21F3957C2146ACC200451A50 /* table_log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table_log.h; sourceTree = "<group>"; };
+		21F3957C2146ACC200451A50 /* table_print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table_print.h; sourceTree = "<group>"; };
 		21F395852146AD9B00451A50 /* TPPrinter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPPrinter.swift; sourceTree = "<group>"; };
 		21F395862146AD9B00451A50 /* TPTablePrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPTablePrint.swift; sourceTree = "<group>"; };
 		3B99F7DE4FC5236B5AA6C00D /* Pods_table_print_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_table_print_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,7 @@
 		2156D5BB2157D56500978BED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				21F3957C2146ACC200451A50 /* table_log.h */,
+				21F3957C2146ACC200451A50 /* table_print.h */,
 				21560E2B2148009200B675CE /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -139,7 +139,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21F3957E2146ACC200451A50 /* table_log.h in Headers */,
+				21F3957E2146ACC200451A50 /* table_print.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

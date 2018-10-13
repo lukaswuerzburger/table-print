@@ -1,6 +1,6 @@
 //
-//  PTConfiguration.swift
-//  table-log
+//  TPConfiguration.swift
+//  table-print
 //
 //  Created by Lukas Würzburger on 9/11/18.
 //  Copyright © 2018 Lukas Würzburger. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  TPTablePrint.swift
-//  truffls-ios-app
+//  table-print
 //
 //  Created by Lukas Würzburger on 6/12/18.
 //  Copyright © 2018 Lukas Würzburger. All rights reserved.

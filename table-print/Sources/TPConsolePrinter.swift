@@ -1,6 +1,6 @@
 //
 //  TPConsolePrinter.swift
-//  table-log
+//  table-print
 //
 //  Created by Lukas Würzburger on 9/26/18.
 //  Copyright © 2018 Lukas Würzburger. All rights reserved.
