@@ -12,7 +12,7 @@ def macOS_platform
 end
 
 def framework_project
-    project 'table-print/table-print.xcodeproj'
+    project 'table-print/TablePrint.xcodeproj'
 end
 
 def demo_project
