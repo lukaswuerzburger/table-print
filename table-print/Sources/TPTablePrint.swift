@@ -25,11 +25,21 @@ open class TPTablePrint {
     // MARK: - Public functions
 
     open func printTable(_ content: [AnyHashable : Any?]) {
+
         let stringifiedContent = stringified(content)
         let keys = stringifiedContent.keys.map({ String(describing: $0) })
         let values = stringifiedContent.values.map({ String($0) })
         let keyWidth = maxKeyWidth(keys: keys)
-        let valueWidth = maxValueWidth(values: values)
+        var valueWidth = maxValueWidth(values: values)
+
+        if let maxWidth = configuration.maxWidth {
+            let keyAndSeparatorWidth = keyWidth + 4 * configuration.padding + 3 * configuration.verticalLineSymbol.count
+            let lineLength = keyAndSeparatorWidth + valueWidth
+            if lineLength > maxWidth {
+                valueWidth = maxWidth - keyAndSeparatorWidth
+            }
+        }
+
         var lines: [String] = []
         let line = separatorLine(keyWidth: keyWidth, valueWidth: valueWidth)
         lines.append(line)
@@ -83,28 +93,64 @@ open class TPTablePrint {
         let numberOfExtraKeySpace = (widths.key - pair.key.count)
         let extraKeySpaces = repeatChar(" ", count: numberOfExtraKeySpace)
         let valueString = pair.value
-        let numberOfExtraValueSpace = (widths.value - valueString.count)
-        let extraValueSpaces = repeatChar(" ", count: numberOfExtraValueSpace)
         let paddingSpace = repeatChar(" ", count: configuration.padding)
-        let line = configuration.verticalLineSymbol
+
+        var result = configuration.verticalLineSymbol
             + paddingSpace
             + pair.key
             + extraKeySpaces
             + paddingSpace
             + configuration.verticalLineSymbol
             + paddingSpace
-            + valueString
-            + extraValueSpaces
-            + paddingSpace
+
+        let lineEnd = paddingSpace + configuration.verticalLineSymbol
+            + "\n"
             + configuration.verticalLineSymbol
-        return line
+            + repeatChar(" ", count: widths.key + 2 * configuration.padding)
+            + configuration.verticalLineSymbol
+            + paddingSpace
+
+        result += breakLines(valueString, lineLength: widths.value, lineEnd: lineEnd)
+
+        return result
+    }
+
+    private func breakLines(_ string: String, lineLength: Int, lineEnd: String) -> String {
+        var result = ""
+
+        var rest = Substring(string)
+        var currentLineLength = 0
+        while !rest.isEmpty {
+            let breakIndex = rest.firstIndex { $0.isWhitespace } ?? rest.endIndex
+            let count = rest.distance(from: rest.startIndex, to: breakIndex)
+
+            if currentLineLength == 0 && count > lineLength {
+                result += rest.prefix(lineLength)
+                result += lineEnd
+
+                rest = rest.dropFirst(lineLength)
+            } else if currentLineLength + count > lineLength {
+                result += repeatChar(" ", count: lineLength - currentLineLength)
+                result += lineEnd
+
+                currentLineLength = 0
+            } else {
+                currentLineLength += count + 1
+                result += rest.prefix(upTo: breakIndex)
+                result += " "
+                rest = rest.suffix(from: breakIndex)
+                rest = rest.drop(while: { $0.isWhitespace })
+            }
+        }
+
+        result += repeatChar(" ", count: configuration.padding + lineLength - currentLineLength)
+            + configuration.verticalLineSymbol
+
+        return result
+
     }
 
     private func repeatChar(_ char: String, count: Int) -> String {
-        var str: String = ""
-        for _ in 0..<count {
-            str += char
-        }
-        return str
+        return String(repeating: char, count: count)
     }
 }
