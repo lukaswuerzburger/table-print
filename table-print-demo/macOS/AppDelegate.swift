@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  table-log-demo-macos
+//  table-print-demo-macos
 //
 //  Created by Lukas Würzburger on 9/23/18.
 //  Copyright © 2018 Lukas Würzburger. All rights reserved.

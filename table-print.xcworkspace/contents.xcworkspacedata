@@ -2,19 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:README.md">
-   </FileRef>
-   <FileRef
-      location = "group:TablePrint.podspec"
-      assignedFileDataType = "public.ruby-script">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/lukaswuerzburger/Documents/projects/lukaswuerzburger/table-print/table-print/TablePrint.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:table-print-demo/table-print-demo.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:table-print/TablePrint.xcodeproj">
    </FileRef>
 </Workspace>
