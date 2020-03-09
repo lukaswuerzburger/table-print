@@ -1,12 +1,18 @@
-# TablePrint
-TablePrint is a tool designed for developers. It prints tables of dictionaries in the debugger console.
+<p align="center">
+    <h1>TablePrint</h1>
+    <img src="https://raw.githubusercontent.com/lukaswuerzburger/table-print/develop/readme-images/xcode-debugger.png" alt="Table Print" title="Table Print" width="450"/>
+    TablePrint is a tool designed for developers.<br/>
+    It prints tables of dictionaries in the debugger console.
+</p>
+
+[Join us on Slack](https://join.slack.com/t/table-print/shared_invite/enQtNDUxMjA1ODQ2MDY3LTBmNDlhZDgxZGY1ZDU3MDk5MGRhMDAwZjYxYTZhNzUwMmIyNmI1MzY3ZDdkYWZlNjk5YTUzMGRkOTBhZTAxMGQ)
 
 ### Contents
 
-- ✍️ [Description](#-description)
+- ✍️ [Description](#️-description)
 - 🖥 [Examples](#-examples)
 - 💻 [How to use](#-how-to-use)
-- ⚠️ [Requirements](#-requirements)
+- ⚠️ [Requirements](#️-requirements)
 - 🐞 [Known Issues](#-known-issues)
 
 ### ✍️ Description
@@ -69,11 +75,12 @@ printTable(stringAttributes)
 
 TablePrint is available on Cocoapods. Just put following line in your `Podfile`:
 ```ruby
-    pod 'TablePrint'
+pod 'TablePrint'
 ```
 
 ### ⚠️ Requirements
 
+- Swift 4+
 - iOS 9+
 - macOS 10.10+
 - Xcode 9+
