@@ -16,6 +16,7 @@ public struct TPConfiguration {
     var horizontalLineSymbol = "-"
     var verticalLineSymbol = "|"
     var placeholder = "<nil>"
+    public var maxWidth: Int?
 
     public static var shared = TPConfiguration()
 }
