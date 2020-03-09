@@ -37,6 +37,7 @@
 		3B99F7DE4FC5236B5AA6C00D /* Pods_table_print_macos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_table_print_macos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D3C861D580462F1DB3553D /* Pods-table-print-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-print-ios.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-table-print-ios/Pods-table-print-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		6F085706D2D9DD4CA337BAC7 /* Pods-table-print-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-print-macos.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-table-print-macos/Pods-table-print-macos.debug.xcconfig"; sourceTree = "<group>"; };
+		8AEAC5472416DEC70027982F /* TablePrint.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; name = TablePrint.podspec; path = ../TablePrint.podspec; sourceTree = "<group>"; };
 		B62C0CD727F06073ADAC0687 /* Pods_table_print_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_table_print_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3659FCDD0AD0C7FAF3C0B3 /* Pods-table-print-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-print-macos.release.xcconfig"; path = "../Pods/Target Support Files/Pods-table-print-macos/Pods-table-print-macos.release.xcconfig"; sourceTree = "<group>"; };
 		EC73538473A7FA88F22ED7EE /* Pods_table_log_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_table_log_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +75,7 @@
 		21F3956F2146ACC200451A50 = {
 			isa = PBXGroup;
 			children = (
+				8AEAC5472416DEC70027982F /* TablePrint.podspec */,
 				21F3957B2146ACC200451A50 /* Sources */,
 				2156D5BB2157D56500978BED /* Supporting Files */,
 				21F3957A2146ACC200451A50 /* Products */,
