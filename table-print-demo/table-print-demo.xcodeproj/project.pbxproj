@@ -86,7 +86,6 @@
 		5E99253706645A5D2516EA23 /* Pods-table-print-demo-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-print-demo-ios.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-table-print-demo-ios/Pods-table-print-demo-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		69790C2AC0EDA49146FE7519 /* Pods-table-print-demo-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-print-demo-ios.release.xcconfig"; path = "../Pods/Target Support Files/Pods-table-print-demo-ios/Pods-table-print-demo-ios.release.xcconfig"; sourceTree = "<group>"; };
 		85774E6DA42036DD287E5667 /* Pods-table-print-demo-macos-cli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-print-demo-macos-cli.release.xcconfig"; path = "../Pods/Target Support Files/Pods-table-print-demo-macos-cli/Pods-table-print-demo-macos-cli.release.xcconfig"; sourceTree = "<group>"; };
-		8A52F9242416DCAF008C0C99 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "/Users/lukas.wuerzburger/Documents/projects/table-print/table-print-demo/README.md"; sourceTree = "<absolute>"; };
 		92F1FDA5E27E8465A0BB3C9B /* Pods-table-print-demo-macos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-print-demo-macos.release.xcconfig"; path = "../Pods/Target Support Files/Pods-table-print-demo-macos/Pods-table-print-demo-macos.release.xcconfig"; sourceTree = "<group>"; };
 		9410445AE3DDA2E10B7704B8 /* Pods_table_print_demo_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_table_print_demo_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B080E0DA7DA27CE27BFE50 /* Pods-table-print-demo-macos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-table-print-demo-macos.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-table-print-demo-macos/Pods-table-print-demo-macos.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,7 +151,6 @@
 		21F3954F2146ABCB00451A50 = {
 			isa = PBXGroup;
 			children = (
-				8A52F9242416DCAF008C0C99 /* README.md */,
 				2117B3B52165040200C4CFDC /* TablePrint.framework */,
 				2156D5702157AF1600978BED /* iOS */,
 				2156D5C22157DFBE00978BED /* macOS */,
