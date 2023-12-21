@@ -212,3 +212,5 @@ xcuserdata/**/*
 
 # Pods
 Pods
+
+.swiftpm

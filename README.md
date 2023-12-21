@@ -5,8 +5,6 @@
     It prints tables of dictionaries in the debugger console.
 </p>
 
-[Join us on Slack](https://join.slack.com/t/table-print/shared_invite/enQtNDUxMjA1ODQ2MDY3LTBmNDlhZDgxZGY1ZDU3MDk5MGRhMDAwZjYxYTZhNzUwMmIyNmI1MzY3ZDdkYWZlNjk5YTUzMGRkOTBhZTAxMGQ)
-
 ### Contents
 
 - ✍️ [Description](#️-description)
@@ -73,9 +71,9 @@ printTable(stringAttributes)
 
 ### 💻 How to use
 
-TablePrint is available on Cocoapods. Just put following line in your `Podfile`:
-```ruby
-pod 'TablePrint'
+TablePrint is available as Swift Package.
+```
+https://github.com/lukaswuerzburger/table-print
 ```
 
 ### ⚠️ Requirements
