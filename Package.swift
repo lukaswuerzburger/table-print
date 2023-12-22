@@ -8,7 +8,7 @@ let package = Package(
         .library(
             name: "TablePrint",
             targets: ["TablePrint"]
-        ),
+        )
     ],
     targets: [
         .target(name: "TablePrint", path: "table-print")

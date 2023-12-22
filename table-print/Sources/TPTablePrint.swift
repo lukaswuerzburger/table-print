@@ -1,11 +1,3 @@
-//
-//  TPTablePrint.swift
-//  table-print
-//
-//  Created by Lukas Würzburger on 6/12/18.
-//  Copyright © 2018 Lukas Würzburger. All rights reserved.
-//
-
 import Foundation
 
 open class TPTablePrint {
@@ -24,7 +16,7 @@ open class TPTablePrint {
 
     // MARK: - Public functions
 
-    open func printTable(_ content: [AnyHashable : Any?]) {
+    open func printTable(_ content: [AnyHashable : Any?], sorting: Sorting? = nil) {
 
         let stringifiedContent = stringified(content)
         let keys = stringifiedContent.keys.map({ String(describing: $0) })
@@ -45,11 +37,28 @@ open class TPTablePrint {
         lines.append(line)
         let pair: (String, String) = (key: configuration.keyTitle, value: configuration.valueTitle)
         let widths = (key: keyWidth, value: valueWidth)
-        let headline = lineWithPair(pair, widths: widths)
+        let headline = self.line(key: pair.0, value: pair.1, widths: widths)
         lines.append(headline)
         lines.append(line)
-        for pair in stringifiedContent {
-            let line = lineWithPair(pair, widths: widths)
+
+        let orderedKeys: [String]
+        switch sorting {
+        case .none:
+            orderedKeys = keys
+        case .key(let direction):
+            orderedKeys = keys.sorted(by: direction == .ascending ? ascending : descending)
+        case .value(let direction):
+            orderedKeys = keys.sorted(by: { lhs, rhs in
+                if direction == .ascending {
+                    stringifiedContent[lhs]! > stringifiedContent[rhs]!
+                } else {
+                    stringifiedContent[lhs]! < stringifiedContent[rhs]!
+                }
+            })
+        }
+
+        for key in orderedKeys {
+            let line = self.line(key: key, value: stringifiedContent[key]!, widths: widths)
             lines.append(line)
         }
         lines.append(line)
@@ -89,15 +98,14 @@ open class TPTablePrint {
         return width
     }
 
-    private func lineWithPair(_ pair: (key: String, value: String), widths: (key: Int, value: Int)) -> String {
-        let numberOfExtraKeySpace = (widths.key - pair.key.count)
+    private func line(key: String, value: String, widths: (key: Int, value: Int)) -> String {
+        let numberOfExtraKeySpace = (widths.key - key.count)
         let extraKeySpaces = repeatChar(" ", count: numberOfExtraKeySpace)
-        let valueString = pair.value
         let paddingSpace = repeatChar(" ", count: configuration.padding)
 
         var result = configuration.verticalLineSymbol
             + paddingSpace
-            + pair.key
+            + key
             + extraKeySpaces
             + paddingSpace
             + configuration.verticalLineSymbol
@@ -110,7 +118,7 @@ open class TPTablePrint {
             + configuration.verticalLineSymbol
             + paddingSpace
 
-        result += breakLines(valueString, lineLength: widths.value, lineEnd: lineEnd)
+        result += breakLines(value, lineLength: widths.value, lineEnd: lineEnd)
 
         return result
     }
@@ -152,5 +160,13 @@ open class TPTablePrint {
 
     private func repeatChar(_ char: String, count: Int) -> String {
         return String(repeating: char, count: count)
+    }
+
+    private func ascending<T: Comparable>(lhs: T, rhs: T) -> Bool {
+        lhs > rhs
+    }
+
+    private func descending<T: Comparable>(lhs: T, rhs: T) -> Bool {
+        lhs < rhs
     }
 }
